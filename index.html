@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Circuit City | Samsung Mobiles & Accessories</title>
+<style>
+:root{--blue:#0754b8;--dark:#061633;--yellow:#ffd21a;--green:#16b84e}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,sans-serif;color:#14213d;background:#f5f7fb}
+.top{background:var(--blue);color:#fff;padding:10px 5%;display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap;font-size:13px;font-weight:bold}
+header{background:#fff;position:sticky;top:0;z-index:10;box-shadow:0 2px 12px #0002}.nav{max-width:1200px;margin:auto;padding:15px 4%;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{display:flex;align-items:center;gap:10px}.cc{font:700 46px Georgia;color:#ef7022}.brand{font:38px Georgia;color:#17145f}.sub{text-align:center;color:#d54a22;font-size:11px;font-weight:bold}
+nav{display:flex;gap:18px;flex-wrap:wrap}nav a{font-size:12px;font-weight:bold;color:#14213d}
+.hero{background:linear-gradient(120deg,#020d22,#073e8d);color:#fff;padding:70px 5%}.heroIn{max-width:1200px;margin:auto;display:grid;grid-template-columns:1.2fr .8fr;align-items:center}.hero h1{font-size:clamp(36px,5vw,62px);margin:0}.hero h1 span{color:var(--yellow)}.hero p{font-size:19px;line-height:1.6}.btn{display:inline-block;border:0;border-radius:8px;padding:13px 20px;font-weight:bold;color:#fff;margin:5px;cursor:pointer}.blue{background:#1976ed}.green{background:#16b84e}.heroIcon{font-size:100px;text-align:center}
+section{padding:65px 5%}.container{max-width:1200px;margin:auto}.title{text-align:center;color:#084696;font-size:32px}.title:after{content:"";display:block;width:75px;height:3px;background:var(--blue);margin:10px auto 30px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.card{background:#fff;border:1px solid #e1e6ef;border-radius:14px;overflow:hidden;box-shadow:0 4px 16px #13213d12}.pic{height:145px;background:#eef5ff;display:flex;align-items:center;justify-content:center;font-size:68px}.cardBody{padding:18px}.card h3{margin:0 0 8px}.price{font-size:22px;font-weight:800;color:#0754b8;margin:10px 0}.muted{color:#667085;font-size:14px;line-height:1.5}.buy{display:block;text-align:center;background:var(--green);color:#fff;padding:10px;border-radius:7px;font-weight:bold}
+.services{background:#eef3fb}.serviceGrid{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}.service{background:#fff;border:1px solid #e1e6ef;border-radius:12px;text-align:center;padding:22px 12px}.service .i{font-size:38px}.service h3{font-size:13px}.service p{font-size:12px;color:#667}
+.about{background:linear-gradient(135deg,#063b88,#075bc8);color:#fff}.aboutGrid{max-width:1200px;margin:auto;display:grid;grid-template-columns:1fr 1fr;gap:35px}.about p{line-height:1.8}.contact{background:#fff;color:#14213d;border-radius:14px;padding:25px}
+.admin{background:#101a2d;color:white;padding:35px 5%}.adminIn{max-width:1200px;margin:auto}.editBox{background:#fff;color:#14213d;border-radius:12px;padding:18px;margin:12px 0}.editBox input,.editBox textarea{width:100%;padding:10px;margin:5px 0 10px;border:1px solid #ccd4e0;border-radius:6px}.row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+footer{background:#061633;color:white;padding:35px 5%;text-align:center}.wa{position:fixed;right:18px;bottom:18px;width:58px;height:58px;border-radius:50%;background:#16b84e;color:#fff;display:flex;align-items:center;justify-content:center;font-size:27px;z-index:20}
+
+.visual{height:145px;background:linear-gradient(135deg,#edf5ff,#fff);position:relative;display:flex;align-items:center;justify-content:center;gap:12px;overflow:hidden}
+.visual span{font-size:52px;filter:drop-shadow(0 6px 5px #0002)}
+.visual small{position:absolute;bottom:9px;left:0;right:0;text-align:center;font-weight:800;font-size:10px;color:#123e7d;letter-spacing:.5px}
+.visual.charger{background:linear-gradient(135deg,#f8fbff,#eaf2ff)}
+.visual.handsfree{background:linear-gradient(135deg,#f4f8ff,#fff)}
+.visual.parts{background:linear-gradient(135deg,#eaf2ff,#fff);display:flex;flex-wrap:wrap;padding:16px 35px;align-content:center}
+.visual.parts span{font-size:38px}
+.visual.lcd{background:linear-gradient(135deg,#eef5ff,#fff)}
+.visual.lcd span{font-size:55px}
+.visual.accessories span,.visual.samsungacc span{font-size:44px}
+.visual.mobile{font-size:75px}
+
+.photo,.partsPhoto{height:145px;background:#fff;display:flex;align-items:center;justify-content:center;overflow:hidden;position:relative}
+.photo img,.partsPhoto img{width:100%;height:100%;object-fit:contain;padding:8px}
+.partsPhoto img{object-fit:cover;opacity:.9}
+.partsLabels{position:absolute;bottom:0;left:0;right:0;background:#063b88dd;color:#fff;text-align:center;padding:7px 4px;font-size:10px;font-weight:800}
+@media(max-width:900px){.heroIn,.aboutGrid{grid-template-columns:1fr}.grid{grid-template-columns:repeat(2,1fr)}.serviceGrid{grid-template-columns:repeat(2,1fr)}.nav{flex-direction:column}}
+@media(max-width:600px){.grid,.serviceGrid,.row{grid-template-columns:1fr}.brand{font-size:29px}.cc{font-size:38px}.hero{padding:50px 5%}}
+</style>
+</head>
+<body>
+<div class="top"><span>📍 Shop # G-34, Ground Floor, Hafeez Centre, Main Boulevard, Gulberg III, Lahore</span><span>📞 0300-4466301</span></div>
+<header><div class="nav"><a class="logo" href="#home"><div class="cc">CC</div><div><div class="brand">Circuit City</div><div class="sub">SOFTWARE & HARDWARE</div></div></a>
+<nav><a href="#home">HOME</a><a href="#phones">SAMSUNG MOBILES</a><a href="#products">ACCESSORIES</a><a href="#services">SERVICES</a><a href="#contact">CONTACT</a><a href="#admin">EDIT / PRICES</a></nav></div></header>
+<section class="hero" id="home"><div class="heroIn"><div><h1>Samsung Mobiles<br><span>& Mobile Solutions</span></h1><p>Samsung mobiles, original parts & LCDs, chargers, handsfree and professional software services.</p><a class="btn blue" href="tel:+923004466301">📞 Call Now</a><a class="btn green" href="https://wa.me/923004466301" target="_blank">💬 WhatsApp</a></div><div class="heroIcon">📱 🔌 🎧</div></div></section>
+
+<section id="phones"><div class="container"><h2 class="title">Samsung Mobiles & Tablets</h2><div class="grid" id="phoneGrid"></div></div></section>
+<section id="products"><div class="container"><h2 class="title">Our Products</h2><div class="grid" id="productGrid"></div></div></section>
+<section class="services" id="services"><div class="container"><h2 class="title">Our Services</h2><div class="serviceGrid">
+<div class="service"><div class="i">🔓</div><h3>MOBILE UNLOCKING</h3><p>Supported mobile unlocking services.</p></div><div class="service"><div class="i">⚙️</div><h3>SOFTWARE UPDATE</h3><p>Software update and troubleshooting.</p></div><div class="service"><div class="i">⬇️</div><h3>FLASHING</h3><p>Firmware flashing for supported devices.</p></div><div class="service"><div class="i">🛠️</div><h3>HARDWARE SOLUTIONS</h3><p>Mobile hardware diagnosis and repair.</p></div><div class="service"><div class="i">🎧</div><h3>TECHNICAL SUPPORT</h3><p>Technical assistance for mobile issues.</p></div>
+</div></div></section>
+<section class="about" id="contact"><div class="aboutGrid"><div><h2>About Circuit City</h2><p>Circuit City is a mobile software and hardware store at Hafeez Centre, Lahore. We deal in Samsung mobiles, original parts and LCDs, chargers, handsfree, mobile accessories and professional software services.</p></div><div class="contact"><h3>Visit / Contact Us</h3><p>📍 Shop # G-34, Ground Floor, Hafeez Centre, Main Boulevard, Gulberg III, Lahore</p><p>📞 <a href="tel:+923004466301">0300-4466301</a></p><p>💬 <a href="https://wa.me/923004466301" target="_blank">WhatsApp</a></p></div></div></section>
+
+<section class="admin" id="admin"><div class="adminIn"><h2>⚙️ Edit Products & Prices</h2><p>25W اور 45W Samsung chargers الگ الگ موجود ہیں۔ ان کی <b>Price</b> آپ اپنی مرضی سے تبدیل کر سکتے ہیں، پھر <b>Save Changes</b> دبائیں۔</p><div id="editor"></div><button class="btn blue" onclick="addPhone()">+ Add Samsung Mobile</button><button class="btn green" onclick="addProduct()">+ Add Product</button><button class="btn" style="background:#555" onclick="resetAll()">Reset</button><p id="saved"></p></div></section>
+<footer>© 2026 Circuit City — Software & Hardware | Hafeez Centre, Lahore</footer><a class="wa" href="https://wa.me/923004466301" target="_blank">☘</a>
+
+<script>
+const data={
+phones:[
+{name:"Samsung Galaxy A07",variant:"4/64 • 6/128",price:"Price on Call",desc:"Samsung Galaxy A07 — available variants 4/64 and 6/128.",icon:"📱"},
+{name:"Samsung Galaxy A16",variant:"8/256",price:"Price on Call",desc:"Samsung Galaxy A16 — 8/256 variant.",icon:"📱"},
+{name:"Samsung Galaxy A17",variant:"6/128 • 8/256",price:"Price on Call",desc:"Samsung Galaxy A17 — available variants 6/128 and 8/256.",icon:"📱"},
+{name:"Samsung Galaxy A25",variant:"8/256",price:"Price on Call",desc:"Samsung Galaxy A25 — 8/256 variant.",icon:"📱"},
+{name:"Samsung Galaxy A56",variant:"8/256",price:"Price on Call",desc:"Samsung Galaxy A56 — 8/256 variant.",icon:"📱"},
+{name:"Samsung Galaxy A57",variant:"8/256 • 12/256",price:"Price on Call",desc:"Samsung Galaxy A57 — available variants 8/256 and 12/256.",icon:"📱"},
+{name:"Samsung Galaxy Tab A11",variant:"Tablet",price:"Price on Call",desc:"Samsung Galaxy Tab A11.",icon:"📲"},
+{name:"Samsung Galaxy S26 Ultra",variant:"Samsung S26 Ultra",price:"Price on Call",desc:"Samsung Galaxy S26 Ultra.",icon:"📱"},
+{name:"Samsung Galaxy S26",variant:"Samsung S26",price:"Price on Call",desc:"Samsung Galaxy S26.",icon:"📱"},
+{name:"Samsung Galaxy S25",variant:"Samsung S25",price:"Price on Call",desc:"Samsung Galaxy S25.",icon:"📱"}
+],
+products:[
+{name:"Samsung 25W Original Charger",variant:"25W • EP-T2510",price:"Price on Call",desc:"Samsung 25W Power Adapter. Price can be changed from Edit / Prices.",icon:"🔌",photo:"https://cdn.mydreamshop.io/source/shared/gen-cloud/products/images/01280912e9dd3bc597be552073a119a9/1722566675342166ac4813538ad511.jpeg"},{name:"Samsung 45W Original Charger",variant:"45W • EP-T4511",price:"Price on Call",desc:"Samsung 45W Power Adapter. Price can be changed from Edit / Prices.",icon:"🔌",photo:"https://plazavea.vteximg.com.br/arquivos/ids/32648789-418-418/imageUrl_1.jpg"},{name:"Mobile Chargers",variant:"",price:"Price on Call",desc:"Quality chargers, charging cables and power accessories.",icon:"🔌"},
+{name:"Handsfree / Earphones",variant:"",price:"Price on Call",desc:"Handsfree, earphones and audio accessories.",icon:"🎧"},
+{name:"Samsung Original Parts",variant:"",price:"Price on Call",desc:"Samsung original replacement parts and hardware components.",icon:"🔧"},
+{name:"Samsung Original LCDs",variant:"",price:"Price on Call",desc:"Samsung original LCD/display assemblies for supported models.",icon:"📱"},
+{name:"Mobile Accessories",variant:"",price:"Price on Call",desc:"Cables, adapters, memory products and other accessories.",icon:"🧰"},
+{name:"Samsung Accessories",variant:"",price:"Price on Call",desc:"Samsung accessories and compatible charging solutions.",icon:"⚡"}
+]};
+const key="circuitCityChargerUpdateV2";let state=JSON.parse(localStorage.getItem(key)||"null")||data;
+function wa(n){return "https://wa.me/923004466301?text="+encodeURIComponent("Hello Circuit City, I want to ask about "+n);}
+function visual(x){
+  const n=(x.name||"").toLowerCase();
+  if(x.photo) return '<div class="photo"><img src="'+x.photo+'" alt="'+x.name+'"></div>';
+  if(n.includes("charger")) return '<div class="photo"><img src="https://cdn.mydreamshop.io/source/shared/gen-cloud/products/images/01280912e9dd3bc597be552073a119a9/1722566675342166ac4813538ad511.jpeg" alt="Samsung charger box"></div>';
+  if(n.includes("handsfree")||n.includes("earphone")) return '<div class="photo"><img src="https://i5.walmartimages.com/seo/Bluethy-Wired-Earphones-HiFi-Sound-Quality-In-ear-Headset-3-5mm-Plug-Wired-Headphone-with-Mic-for-Music-Call-Sports_74bc239e-1cce-4d68-bd6e-f5f9ccad3a23.402237502b73e3516003c08848c041d2.jpeg" alt="Handsfree earphones"></div>';
+  if(n.includes("lcd")) return '<div class="photo"><img src="https://i5.walmartimages.com/seo/Easy-To-Install-LCD-Touches-Assembly-LCD-Touches-Screens-Replaces-for-Smartphone-Screens-Repair-Simple-Process_6e631c98-3300-4b39-9a81-7c13f990f92a.480ba3645d6c7179a68304fe904b631f.jpeg" alt="Mobile LCD screen"></div>';
+  if(n.includes("part")) return '<div class="partsPhoto"><img src="https://i5.walmartimages.com/seo/Easy-To-Install-LCD-Touches-Assembly-LCD-Touches-Screens-Replaces-for-Smartphone-Screens-Repair-Simple-Process_6e631c98-3300-4b39-9a81-7c13f990f92a.480ba3645d6c7179a68304fe904b631f.jpeg" alt="Mobile parts and LCD"><div class="partsLabels">LCD • RINGER • SPEAKER • MIC • MODULES</div></div>';
+  if(n.includes("accessor")) return '<div class="visual accessories"><span>🔌</span><span>🔋</span><span>💾</span><span>📡</span><small>MOBILE ACCESSORIES</small></div>';
+  return '<div class="visual mobile">📱</div>';
+}
+function card(x){return `<div class="card">${visual(x)}<div class="cardBody"><h3>${x.name}</h3><b>${x.variant||""}</b><div class="price">${x.price}</div><div class="muted">${x.desc}</div><br><a class="buy" href="${wa(x.name+" "+(x.variant||""))}" target="_blank">WhatsApp Inquiry</a></div></div>`}
+function esc(s){return String(s).replaceAll("&","&amp;").replaceAll('"',"&quot;").replaceAll("<","&lt;").replaceAll(">","&gt;")}
+function render(){phoneGrid.innerHTML=state.phones.map(card).join("");productGrid.innerHTML=state.products.map(card).join("");renderEditor()}
+function renderEditor(){let h="";state.phones.forEach((x,i)=>h+=box("Samsung Mobile",i,x,"phones"));state.products.forEach((x,i)=>h+=box("Product",i,x,"products"));editor.innerHTML=h}
+function box(label,i,x,t){return `<div class="editBox"><b>${label} #${i+1}</b><div class="row"><div><label>Name</label><input value="${esc(x.name)}" onchange="edit('${t}',${i},'name',this.value)"></div><div><label>Variant</label><input value="${esc(x.variant||"")}" onchange="edit('${t}',${i},'variant',this.value)"></div></div><label>Price</label><input value="${esc(x.price)}" onchange="edit('${t}',${i},'price',this.value)"><label>Description</label><textarea onchange="edit('${t}',${i},'desc',this.value)">${esc(x.desc)}</textarea><button class="btn" style="background:#d33" onclick="removeItem('${t}',${i})">Delete</button></div>`}
+function edit(t,i,k,v){state[t][i][k]=v;localStorage.setItem(key,JSON.stringify(state));phoneGrid.innerHTML=state.phones.map(card).join("");productGrid.innerHTML=state.products.map(card).join("")}
+function save(){localStorage.setItem(key,JSON.stringify(state));render();saved.textContent="✓ Saved";setTimeout(()=>saved.textContent="",2000)}
+function addPhone(){state.phones.push({name:"New Samsung Mobile",variant:"Variant",price:"Price on Call",desc:"Enter details.",icon:"📱"});save()}
+function addProduct(){state.products.push({name:"New Product",variant:"",price:"Price on Call",desc:"Enter details.",icon:"📦"});save()}
+function removeItem(t,i){if(confirm("Delete this item?")){state[t].splice(i,1);save()}}
+function resetAll(){if(confirm("Reset to the supplied Samsung list?")){localStorage.removeItem(key);state=JSON.parse(JSON.stringify(data));render()}}
+render();
+</script>
+</body>
+</html>
