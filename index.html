@@ -53,17 +53,6 @@ footer{background:#061633;color:white;padding:35px 5%;text-align:center}.wa{posi
 
 <section class="admin" id="admin"><div class="adminIn"><h2>⚙️ Edit Products & Prices</h2><p>25W اور 45W Samsung chargers الگ الگ موجود ہیں۔ ان کی <b>Price</b> آپ اپنی مرضی سے تبدیل کر سکتے ہیں، پھر <b>Save Changes</b> دبائیں۔</p><div id="editor"></div><button class="btn blue" onclick="addPhone()">+ Add Samsung Mobile</button><button class="btn green" onclick="addProduct()">+ Add Product</button><button class="btn" style="background:#555" onclick="resetAll()">Reset</button><p id="saved"></p></div></section>
 <footer>© 2026 Circuit City — Software & Hardware | Hafeez Centre, Lahore</footer><a class="wa" href="https://wa.me/923004466301" target="_blank">☘</a>
-firebase.auth().onAuthStateChanged(function(user) {
-    if (user) {
-        // User is signed in
-        var email = user.email;
-        // ...
-    } else {
-        // User is not signed in
-        // ...
-    }
-});
-firebase.auth().signInWithEmailAndPassword('Hafizjahangir4466@gmail.com','pkhafiz@4466');
 <script>
 const data={
 
@@ -111,6 +100,21 @@ function addProduct(){state.products.push({name:"New Product",variant:"",price:"
 function removeItem(t,i){if(confirm("Delete this item?")){state[t].splice(i,1);save()}}
 function resetAll(){if(confirm("Reset to the supplied Samsung list?")){localStorage.removeItem(key);state=JSON.parse(JSON.stringify(data));render()}}
 render();
+<script>
+function checkAdminAccess() {
+    const correctPin = "2373";
+    const userPin = prompt("Admin PIN darj karen:");
+    
+    if (userPin === correctPin) {
+        document.getElementById("admin").style.display = "block";
+    } else {
+        alert("Ghalat pin!");
+        document.getElementById("admin").style.display = "none";
+    }
+}
+checkAdminAccess();
+</script>
+
 </script>
 </body>
 </html>
